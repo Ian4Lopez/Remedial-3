@@ -39,7 +39,17 @@ namespace ClassLogicaNegocio
             return Dal.ConsultaDS(query, ref msg).Tables[0];
         }
 
-        
+        public DataTable consultaProve()
+        {
+            string msg = "";
+            string query = "select p.Recibio,p.Entrega,p.Cantidad, Fecha_Entre, Precio, " +
+                "o.Nom_Obra, m.Descripcion_Mat,pro.Razon " +
+                "from Provee_De_Materi_Obra p join Obra o on o.ID_Obra = p.ID_Obra " +
+                " join Material m on m.ID_Material = p.ID_Material " +
+                "join Proveedor pro on pro.ID_Proveedor = p.ID_Proveedor";
+
+            return Dal.ConsultaDS(query, ref msg).Tables[0];
+        }
 
         public string InsertarMaterial(ref string msg, List<SqlParameter> lista)
         {

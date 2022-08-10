@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <a href="Obra.aspx"> Obra</a>
-            
+            <a href="Proveedor.aspx"> Proveedor</a>
         </div>
         <div>
 
