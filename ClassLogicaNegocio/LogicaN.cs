@@ -71,5 +71,17 @@ namespace ClassLogicaNegocio
             return msg;
 
         }
+        public string eliminarObra( ref  string msg, List<SqlParameter> lista) {
+            string query = "delete from Obra where ID_Obra=@obra";
+            bool resultado = Dal.Operaciones(query, ref msg, lista);
+            if (resultado)
+            {
+                msg = "Se elimino Correctamente";
+            }
+            else
+                msg = "No se realizo";
+
+            return msg;
+        }
     }
 }

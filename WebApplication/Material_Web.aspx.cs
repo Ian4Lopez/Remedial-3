@@ -61,5 +61,7 @@ namespace WebApplication
             msg = logica.InsertarMaterial(ref msg, lista);
             Label1.Text= msg;
         }
+
+
     }
 }

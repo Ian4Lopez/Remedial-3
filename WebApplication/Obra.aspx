@@ -41,7 +41,11 @@
             <asp:Button ID="Button2" runat="server" Text="Insertar Obra" OnClick="Button2_Click" />
         </div>
         
-         
+         <div>
+            <h4>Eliminar Obra </h4>
+                SeleccionarObra: <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+             <asp:Button ID="Button3" runat="server" Text="Eliminar Obra" OnClick="Button3_Click" />
+        </div>
     </form>
 </body>
 </html>

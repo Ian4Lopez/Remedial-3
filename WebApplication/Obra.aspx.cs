@@ -19,6 +19,7 @@ namespace WebApplication
             {
                 DataTable tablaDrop1 = logica.llenarDrop("select ID_Dueno, Nombre_Dueno from Dueno");
                 DataTable tablaDrop2 = logica.llenarDrop("select ID_Encargado, Nom_Encargado from EncargadoObra");
+                DataTable tablaDrop3 = logica.llenarDrop("select ID_Obra,Nom_Obra from Obra");
 
                 foreach (DataRow dr in tablaDrop1.Rows)
                 {
@@ -31,6 +32,14 @@ namespace WebApplication
                 foreach (DataRow dr in tablaDrop2.Rows)
                 {
                     DropDownList2.Items.Add(
+                        new ListItem(
+                           value: dr[0].ToString(),
+                           text: dr[1].ToString()
+                            ));
+                }
+                foreach (DataRow dr in tablaDrop3.Rows)
+                {
+                    DropDownList3.Items.Add(
                         new ListItem(
                            value: dr[0].ToString(),
                            text: dr[1].ToString()
@@ -72,6 +81,19 @@ namespace WebApplication
             string msg = "";
 
             msg = logica.InsertarObra(ref msg, lista);
+            Label1.Text = msg;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            SqlParameter obra = new SqlParameter("@obra", SqlDbType.Int);
+
+            obra.Value = DropDownList3.SelectedValue;
+            List<SqlParameter> lista = new List<SqlParameter>() { obra };
+
+            string msg = "";
+
+            msg = logica.eliminarObra(ref msg, lista);
             Label1.Text = msg;
         }
     }
