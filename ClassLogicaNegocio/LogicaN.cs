@@ -30,6 +30,15 @@ namespace ClassLogicaNegocio
             return Dal.ConsultaDS(query, ref mensaje).Tables[0];
         }
 
+        public DataTable consultaObra()
+        {
+            string msg = "";
+            string query = "select ID_Obra,Nom_Obra,Direccion,Fecha_Inicio,Fecha_Termino,Nombre_Dueno, Nom_Encargado from Obra join Dueno on Obra.ID_Dueno = Dueno.ID_Dueno " +
+                " join EncargadoObra on EncargadoObra.ID_Encargado = Obra.ID_Encargado";
+
+            return Dal.ConsultaDS(query, ref msg).Tables[0];
+        }
+
         public string InsertarMaterial(ref string msg, List<SqlParameter> lista)
         {
 
@@ -46,6 +55,21 @@ namespace ClassLogicaNegocio
                 msg = "No se realizo";
 
             return msg;
+        }
+
+        public string InsertarObra(ref string msg, List<SqlParameter> lista)
+        {
+            string query = "insert into Obra values(@nombre,@direccion,@fecha1,@fecha2,@dueno,@encargado);";
+            bool resultado = Dal.Operaciones(query, ref msg, lista);
+            if (resultado)
+            {
+                msg = "Tarea Realizada";
+            }
+            else
+                msg = "No se realizo";
+
+            return msg;
+
         }
     }
 }

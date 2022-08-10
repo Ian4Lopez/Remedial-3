@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Material_Web.aspx" />
+    <Content Include="Obra.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -78,6 +79,13 @@
     </Compile>
     <Compile Include="Material_Web.aspx.designer.cs">
       <DependentUpon>Material_Web.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Obra.aspx.cs">
+      <DependentUpon>Obra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Obra.aspx.designer.cs">
+      <DependentUpon>Obra.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
