@@ -1,0 +1,6 @@
+C:\Users\Ian\source\repos\Remedial_2\ClassEntidades\bin\Debug\ClassEntidades.dll
+C:\Users\Ian\source\repos\Remedial_2\ClassEntidades\bin\Debug\ClassEntidades.pdb
+C:\Users\Ian\source\repos\Remedial_2\ClassEntidades\obj\Debug\ClassEntidades.csproj.AssemblyReference.cache
+C:\Users\Ian\source\repos\Remedial_2\ClassEntidades\obj\Debug\ClassEntidades.csproj.CoreCompileInputs.cache
+C:\Users\Ian\source\repos\Remedial_2\ClassEntidades\obj\Debug\ClassEntidades.dll
+C:\Users\Ian\source\repos\Remedial_2\ClassEntidades\obj\Debug\ClassEntidades.pdb

@@ -1,0 +1,6 @@
+C:\Users\Ian\source\repos\Remedial_2\ClassAccesoDatos\bin\Debug\ClassAccesoDatos.dll
+C:\Users\Ian\source\repos\Remedial_2\ClassAccesoDatos\bin\Debug\ClassAccesoDatos.pdb
+C:\Users\Ian\source\repos\Remedial_2\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csproj.AssemblyReference.cache
+C:\Users\Ian\source\repos\Remedial_2\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Ian\source\repos\Remedial_2\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.dll
+C:\Users\Ian\source\repos\Remedial_2\ClassAccesoDatos\obj\Debug\ClassAccesoDatos.pdb
