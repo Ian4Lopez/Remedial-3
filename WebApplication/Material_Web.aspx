@@ -9,6 +9,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <a href="Obra.aspx"> Obra</a>
+            
+        </div>
+        <div>
+
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
         </div>
 

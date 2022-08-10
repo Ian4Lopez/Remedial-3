@@ -39,6 +39,8 @@ namespace ClassLogicaNegocio
             return Dal.ConsultaDS(query, ref msg).Tables[0];
         }
 
+        
+
         public string InsertarMaterial(ref string msg, List<SqlParameter> lista)
         {
 
