@@ -100,6 +100,42 @@ namespace ClassAccesoDatos
             return contenedor;
         }
 
+        public Boolean Operaciones(string query, ref string msg, List<SqlParameter> parametros)
+        {
+            Boolean result = false;
+            SqlCommand command = new SqlCommand();
+            SqlConnection connection = AbrirConexion(ref msg);
+           
+
+            if (connection == null)
+            {
+                msg = "Sin conexion a la base de datos";
+            }
+            else
+            {
+                command.CommandText = query;
+                foreach (var parametro in parametros)
+                {
+                    command.Parameters.Add(parametro);
+                }
+                command.Connection = connection;
+                try
+                {
+                    command.ExecuteNonQuery();
+                    msg = "Se ha realizado correctamente la tarea";
+                    result = true;
+                }
+                catch (Exception ex)
+                {
+                    msg = "Error: " + ex.Message;
+                    result = false;
+                }
+            }
+            
+
+            return result;
+        }
+
         public Boolean MultiplesConsultasDataSet(string querySql, SqlConnection conAbierta, ref string mensaje, ref DataSet dataset1, string nomConsulta)
         {
             SqlCommand carrito = null;

@@ -29,5 +29,23 @@ namespace ClassLogicaNegocio
 
             return Dal.ConsultaDS(query, ref mensaje).Tables[0];
         }
+
+        public string InsertarMaterial(ref string msg, List<SqlParameter> lista)
+        {
+
+            string query = "insert into Material values( @desc, @marca, @presentacion,@tipo );";
+
+
+            bool resultado = Dal.Operaciones(query, ref msg,lista);
+
+            if (resultado)
+            {
+                msg = "Tarea Realizada";
+            }
+            else
+                msg = "No se realizo";
+
+            return msg;
+        }
     }
 }

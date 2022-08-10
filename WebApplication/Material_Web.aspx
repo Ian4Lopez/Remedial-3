@@ -9,6 +9,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+        </div>
+
+        <div>
             <asp:Button ID="Button1" runat="server" Text="Consultar" OnClick="Button1_Click" />
 
         </div>
@@ -21,6 +25,10 @@
             Marca: <asp:TextBox ID="Marca" runat="server"></asp:TextBox>
             Presentacion: <asp:TextBox ID="Presentacion" runat="server"></asp:TextBox>
             Tipo: <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+        </div>
+        <div>
+            <asp:Button ID="Button2" runat="server" Text="Insertar" OnClick="Button2_Click"
+                />
         </div>
 
     </form>
