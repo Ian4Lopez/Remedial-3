@@ -11,6 +11,7 @@
         <div>
             <a href="Obra.aspx"> Obra</a>
             <a href="Proveedor.aspx"> Proveedor</a>
+            <a href="Consulta.aspx"> Consulta</a>
         </div>
         <div>
 

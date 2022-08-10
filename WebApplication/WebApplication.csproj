@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Consulta.aspx" />
     <Content Include="Material_Web.aspx" />
     <Content Include="Obra.aspx" />
     <Content Include="Proveedor.aspx" />
@@ -74,6 +75,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Material_Web.aspx.cs">
       <DependentUpon>Material_Web.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

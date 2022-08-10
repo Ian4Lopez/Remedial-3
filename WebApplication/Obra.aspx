@@ -11,7 +11,7 @@
         <div>
             <a href="Material_Web.aspx"> Material</a>
             <a href="Proveedor.aspx"> Proveedor</a>
-            
+            <a href="Consulta.aspx"> Consulta</a>
         </div>
         <div>
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
